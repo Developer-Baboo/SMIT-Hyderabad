@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        input[type='button'] {
+            border: 2px solid black;
+            font-size: 30px;
+        }
+
+        #main {
+            width: 250px;
+            height: 200px;
+        }
+
+        #modelimage {
+            display: none;
+        }
+
+        #modelimage {
+            position: absolute;
+            margin-left: 350px;
+            margin-top: -50px;
+            width: 750px;
+            height: 400px;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    ***************************************Chapter 43-48*****************************************
+    <b style="font-size: 30px;color: blue;font-weight: bold;">Link :</b><a href="#" style="font-size: 30px;text-decoration: none;color: red;font-weight: bold;" onclick="alt()">
+        Click ME 
+      </a>
+         
+  <br><br><br>
+      <div style="background-color: gray;"  >
+        <h1 style="color: white;text-align: center;">Mobile Phone LookUp</h1>
+      <div style="display: inline-block;"><img src="images/M1.png" width="300px" height="200px" id="call" style="border: 1px solid;" onclick="pur()"><br><h1 style="margin-left: 20px;">IPhone6</h1></div>
+      <div style="display: inline-block;"><img src="images/M2.png" width="300px" height="200px" style="border: 1px solid;" onclick="pur()"><h1 style="margin-left: 20px;">GallexyS6Edge</h1></div>
+      <div style="display: inline-block;"><img src="images/M3.png" width="300px" height="200px" style="border: 1px solid;" onclick="pur()"><h1 style="margin-left: 80px;">V10</h1></div>
+      <div style="display: inline-block;"><img src="images/M4.png" width="300px" height="200px" style="border: 1px solid;" onclick="pur()"><h1 style="margin-left: 80px;">Huawei</h1></div>
+  
+  </div>
+  <br>
+  <div style="background-color:peru;">
+      <img  id='img1' onmouseover="f1()" onmouseout="f2()" src="images/car.png" >
+      <h1 id="txt">IMAGES 1</h1>
+  </div>
+
+  <table id="myTable"  style="border: 3px solid sienna;" >
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Class</th>
+    </tr>
+      <tr>
+        <td>0</td>
+        <td>Zubair</td>
+        <td>12</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Asad</td>
+        <td>10</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Ayesha</td>
+        <td>12</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Omer</td>
+        <td>12</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mahnoor</td>
+        <td>9</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Usman</td>
+        <td>10</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Khalid</td>
+        <td>8</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Ali</td>
+        <td>9</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Maryam</td>
+        <td>10</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Erum</td>
+        <td>10</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+      </tr>
+      
+    </table>
+    <div >
+      <h1>counter in browser</h1>
+      <h1 id='val'>0</h1>
+      <button type="button"  onclick="increment  ()" >INCREMENT</button>
+      <button type="button"  onclick="decrement()" >DECREMENT</button>
+      <button type="button"  onclick="Reset()" >RESET</button>
+  </div>
+  <br>
+
+    <!-- ***************************************Chapter 49-52***************************************** -->
+    <center>
+		<fieldset><h1>SIGN UP FORM</h1>
+
+
+<form >
+	<h3>User_Name</h3>
+
+	<input type="text" size=30 placeholder="User_Name" id="User"  >
+
+	<h3>Email</h3>
+
+	<input type="text" size=30 placeholder="Email" id="Email" >
+
+	<h3>Password</h3>
+
+	<input type="text" size=30 placeholder="Password" id="Password" >
+	<br>
+
+	<br><H3><input type="checkbox" name="">&nbsp;CHECK ME</H3>
+
+	<input type="button" name="" value="SIGN UP" onclick="move()">
+
+	<h4><a href="#">Forget Password</a></h4>
+
+
+	<h3>Not Registred &nbsp;<a href="#">LOG IN</h3>
+
+
+
+
+</form>
+</fieldset>
+</center>
+    <p id='hid'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime magnam assumenda 
+	corrupti cupiditate, architecto eius soluta amet tempora 
+	cumque laboriosam fugiat pariatur qui, error eos. Illo nisi similique amet maiores?
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut? Aperiam fuga nisi quos 
+	voluptatem quae quibusdam praesentium, 
+	animi possimus minima facere quaerat officia, ad sed? Illum dolorem at non!</p>
+
+<p   id='para' style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores, id nisi minus incidunt neque dolor, 
+	ipsam ullam repudiandae error labore animi provident harum, obcaecati culpa ea hic tempora nam!<a href='javascript:void(0)' onclick="Event_fun()">Read More</a></p>
+
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ex? 
+	Eaque, voluptatibus! Qui, iusto. Eos eaque recusandae, repellendus suscipit,
+	 eum minus provident reiciendis, dolor magni illo quam? Sint, debitis ex.
+	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sit nam rerum aperiam 
+	nisi neque a, ab corrupti reiciendis architecto quaerat quas similique
+	 exercitationem ea, repellat natus laboriosam. Consectetur, veritatis!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dignissimos rerum repellat,
+	 voluptas autem deserunt quis! Blanditiis facere excepturi voluptatibus 
+	in similique perferendis hic suscipit doloremque cumque a, aut voluptate!<a href="JavaScript:void(0)" onclick="read_fun()" id='hide'>Read </a></p>
+	
+    <p id="slowLoris">
+		
+		<a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+        </p>
+
+
+    <!-- ***************************************Chapter 53-57***************************************** -->
+
+    <div>
+            <img src="images/1.jpg" id='main' data-toggle="modal" data-target="#exampleModal" onclick="chgimg(this)">
+                <img src="images/2.jpg" id='main' data-toggle="modal" data-target="#exampleModal" onclick="chgimg(this)">
+                <img src="images/3.jpg" id='main' data-toggle="modal" data-target="#exampleModal" onclick="chgimg(this)">
+                <img src="images/5.jpg" id='main' data-toggle="modal" data-target="#exampleModal" onclick="chgimg(this)">
+                 <img src="images/6.jpg" id='main' data-toggle="modal" data-target="#exampleModal" onclick="chgimg(this)">
+        </div>
+        <div class="model">
+            
+            <img src="" id='modelimage'>   </div>
+       
+     <div>
+
+    <!-- ***************************************Chapter 58-68***************************************** -->
+
+    <div>
+        <h1> DOM </h1>
+        <div id='form-content' class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <script>
+
+
+        Q NO : 1
+        part (i)
+        a=document.getElementById("main-content")
+        console.log(a)
+
+        part (ii)
+        p=a.childNodes
+        console.log(p)
+
+
+        part (iii)
+        d=document.getElementsByClassName('render')
+        for (var i=0;i<d.length;i++){
+            a=document.getElementsByClassName('render')[i].innerHTML;
+            console.log(a);
+        }      
+
+       part (iv)
+        document.getElementById('first-name').value='zubair'
+
+       part(v)
+        document.getElementById('last-name').value='minhas'
+        document.getElementById('email').value='zubair@gmail.com'
+
+        Q NO 2
+        part (i)
+        a=document.getElementById("form-content")
+        console.log(a.nodeType)
+
+        part (ii)
+        p=document.getElementById('lastName')
+        console.log(p.nodeType)
+        console.log(p.parentNode)
+
+        part (iii)
+        var newp= document.createElement("p");
+        var t = document.createTextNode("ADD NEW TAG!");
+        newp.appendChild(t);
+        p.appendChild(newp);
+        console.log(p)
+
+       part (iv)
+        con=document.getElementById('main-content').firstChild
+        console.log(con)
+        lchild=document.getElementById('main-content').lastChild
+        console.log(lchild)
+
+       part (v)
+        nsub=document.getElementById('lastName').nextElementSibling
+        console.log(nsub)
+        psub=document.getElementById('lastName').previousElementSibling
+        console.log(psub)
+
+       part (vi)
+        nemail=document.getElementById('email')
+        console.log(nemail.parentNode)
+        console.log(nemail.nodeType)
+
+
+    </script>
+
+
+
+</body>
+
+</html>
